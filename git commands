@@ -1,0 +1,42 @@
+git init <repo name>  To initialize a local repository
+cd <reponame>  Get into the folder
+git remote add origin <url>  To map the remote repository to local
+git ls-remote To identify the mapped remote repository
+git branch -a  To list all branches
+create a text file
+git add <file name>
+git commit -m "<Comment>"
+git restore <filename>
+git add . To stage multiple files.
+git reset --hard To unstage the file and undo all the changes
+git commit -am "" To commit the modified files without using the git add command
+git checkout <branch name> To navigate to another branch
+git checkout -b <branch name> To create a new branch locally
+git push -u origin <branch name> To push the locally created branch to remote repository
+git pull To get the newly created branch from remote 
+git rm <file name> To remove a file and stage the change
+git log To see the history of commits
+git branch -D <branch name> To delete the branch
+git push origin -d <branch name> To remove from remote
+git diff master  - To see the difference from current branch against master branch
+git diff --name-status master - To see the list of file names that has difference from master branch
+git diff <branch1>..<branch2> - To see the changes between two branches
+git diff --name-status <branch1>..<branch2> - To see the list of changed files between two branches
+git rebase <parent branchname> - To bring the parent branch changes
+git log --pretty=format:"%as %an"
+git log --pretty=format:"%as"
+git log --pretty=format:"%H"
+git log --pretty=format:"%cn"
+git log -5
+git stash save "<name>"  - To save the changes into cache for later usage
+git stash list - To list all unsaved changes stored in cache
+git stash apply stash@{0} - To apply the cache into repository But cache has item stored
+git stash pop stash@{0} - To apply the cache into repository but removes the item
+git clean -f  - To remove newly created untracked file
+git clean -f -d  - To remove newly created untracked folder
+git tag --list  - To list all the tags created
+git tag <tagname>  - To create a tag in current branch
+git push origin <tagname>  - To push the tag to remote repository
+git revert HEAD~<number of commits to skip>   - To revert the commits. This creates new commit. 
+git revert --no-commit HEAD~<number of commits to skip>  - To revert the commits without a new commit
+git cherry-pick <commit id >   https://www.geeksforgeeks.org/how-to-use-the-cherry-pick-command-in-git/
