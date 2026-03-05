@@ -1,3 +1,5 @@
+git commands 
+
 git init <repo name>  To initialize a local repository
 cd <reponame>  Get into the folder
 git remote add origin <url>  To map the remote repository to local
